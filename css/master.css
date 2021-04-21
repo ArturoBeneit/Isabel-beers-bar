@@ -22,15 +22,13 @@ header{
 
 /* ---- logo ---- */
 header>img{
-  height: 100px;
+  height: 200px;
 }
 
 /* ---- menu ---- */
 header>nav{
-  margin-left: 50px;
+  /* margin-left: 50px; */
   flex: 1 0 100%;
-  margin: 0;
-
   display: flex;
   justify-content: center;
 }
@@ -41,6 +39,7 @@ header>nav>a{
   padding: 10px;
   border: 2px solid white;
   border-radius: 7px;
+  font-size: 150%;
 }
 
 header>nav>a:nth-of-type(2){
