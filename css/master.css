@@ -1,11 +1,17 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+@import "clock.css";
+@import "checkbox.css";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'B612', sans-serif;
 }
 
 body {
     background: rgb(33, 47, 60);
+    color: #E5E5E5;
 }
 
 
@@ -56,11 +62,43 @@ header>img:hover {
 }
 
 
-/* ---------- MAPA ---------- */
 
-.map>iframe {
-    width: 400px;
-    height: 400px;
+/* ---------- MAIN ---------- */
+
+/* ---- top beers ---- */
+
+.top_beers{
+  width: 80%;
+  max-width: 1300px;
+
+  margin: 20px auto;
+  overflow: hidden;
+
+  text-align: center;
+  background: rgb(27, 38, 49);
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px black ;
+}
+
+.top_beers>h1{
+  font-size: 300%;
+}
+
+.topBeer{
+  float: left;
+  width: calc(100%/4);
+
+  padding: 20px;
+}
+
+.topBeer>img{
+  width: 100%;
+}
+
+.topBeer>p:first-of-type{
+  color: #F1C40F;
+  font-size: 150%;
+  margin: 5px 0 20px;
 }
 
 
@@ -88,6 +126,9 @@ header>img:hover {
         flex: 1 0 100%;
         flex-wrap: wrap;
     }
+    .topBeer{
+      width: calc(100%/2);
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -98,4 +139,14 @@ header>img:hover {
         align-items: center;
         text-align: center;
     }
+
+    .topBeer{
+      width: 100%;
+    }
+
+    .topBeer>img{
+      width: auto;
+      height: 300px;
+    }
+
 }

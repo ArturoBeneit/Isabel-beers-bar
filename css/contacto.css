@@ -1,0 +1,6 @@
+/* ---------- MAPA ---------- */
+
+.map>iframe {
+    width: 400px;
+    height: 400px;
+}
