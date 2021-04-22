@@ -25,28 +25,26 @@ header {
 
 header>img {
     height: 100px;
+    margin: 0 20px;
 }
 
 
 /* ---- menu ---- */
 
 header>nav {
-    margin-left: 50px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 header>nav>a {
     text-decoration: none;
     color: #E5E5E5;
+
+    margin: 10px 10px;
     padding: 10px;
+
     border: 2px solid white;
     border-radius: 7px;
-    margin: 10px 0;
-}
-
-header>nav>a:nth-of-type(2) {
-    margin: 10px 30px;
 }
 
 header>nav>a:hover {
@@ -85,17 +83,19 @@ header>img:hover {
 
 /* ---------- MEDIAS ---------- */
 
-
-/* iphoneX == 980px */
-
-@media screen and (max-width: 980px) {
-    header>img {
-        height: 200px;
-    }
+@media screen and (max-width: 900px) {
     header>nav {
-        font-size: 150%;
         flex: 1 0 100%;
-        margin: 0;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header>nav>a {
+        flex: 1 0 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
