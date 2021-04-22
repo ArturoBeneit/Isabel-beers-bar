@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
-@import "clock.css";
-@import "checkbox.css";
 
 *{
   margin: 0;
@@ -104,6 +102,12 @@ header>img:hover {
 
 /* ---------- FOOTER ---------- */
 
+footer{
+  margin: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .tooltip .extra {
     visibility: hidden;
     width: 120px;
@@ -118,6 +122,25 @@ header>img:hover {
     border-radius: 2px;
 }
 
+/* ---- social media ---- */
+
+.social-media>span{
+  background-repeat: no-repeat;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding:10px 20px;
+}
+
+.social-media>span:nth-child(1){
+  background-image: url('../img/social-media/twitter.svg');
+  color: green;
+}
+.social-media>span:nth-child(2){
+  background-image: url('../img/social-media/instagram.svg');
+}
+.social-media>span:nth-child(3){
+  background-image: url('../img/social-media/mail1.svg');
+}
 
 /* ---------- MEDIAS ---------- */
 
