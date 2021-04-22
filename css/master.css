@@ -124,23 +124,21 @@ footer{
 
 /* ---- social media ---- */
 
-.social-media>span{
-  background-repeat: no-repeat;
+.social-media>a{
 	margin-left: 10px;
 	margin-right: 10px;
-	padding:10px 20px;
+  text-decoration: none;
 }
 
-.social-media>span:nth-child(1){
-  background-image: url('../img/social-media/twitter.svg');
-  color: green;
+.icon {
+   fill: black;
+   transition: 250ms;
 }
-.social-media>span:nth-child(2){
-  background-image: url('../img/social-media/instagram.svg');
+
+a:hover .icon{
+  fill: #F1C40F;
 }
-.social-media>span:nth-child(3){
-  background-image: url('../img/social-media/mail1.svg');
-}
+
 
 /* ---------- MEDIAS ---------- */
 
