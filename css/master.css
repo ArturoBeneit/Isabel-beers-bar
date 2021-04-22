@@ -1,78 +1,101 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-  background: rgb(33, 47, 60);
+body {
+    background: rgb(33, 47, 60);
 }
+
 
 /* ---------- HEADER ---------- */
 
-header{
-  padding: 10px;
-  background: black;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+header {
+    padding: 10px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* ---- logo ---- */
-header>img{
-  height: 100px;
+
+header>img {
+    height: 100px;
 }
+
 
 /* ---- menu ---- */
-header>nav{
-  margin-left: 50px;
-  display: flex;
-  justify-content: center;
+
+header>nav {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-header>nav>a{
-  text-decoration: none;
-  color: #E5E5E5;
-  padding: 10px;
-  border: 2px solid white;
-  border-radius: 7px;
-  margin: 10px 0;
+header>nav>a {
+    text-decoration: none;
+    color: #E5E5E5;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 7px;
+    margin: 10px 0;
 }
 
-header>nav>a:nth-of-type(2){
-  margin: 10px 30px;
+header>nav>a:nth-of-type(2) {
+    margin: 10px 30px;
 }
 
-header>nav>a:hover{
-  color: #F1C40F;
+header>nav>a:hover {
+    color: #F1C40F;
 }
 
-header>img:hover{
-  content:url('../img/Logos/logo1-hover2.png');
+header>img:hover {
+    content: url('../img/Logos/logo1-hover2.png');
 }
+
 
 /* ---------- MAPA ---------- */
 
-.map>iframe{
-  width: 400px;
-  height: 400px;
+.map>iframe {
+    width: 400px;
+    height: 400px;
 }
 
 
+/* ---------- FOOTER ---------- */
+
+.tooltip .extra {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(33, 47, 60);
+    color: #E5E5E5;
+    text-align: center;
+    text-decoration: wavy;
+}
+
+.tooltip:hover .extra {
+    visibility: visible;
+    border-radius: 2px;
+}
+
 
 /* ---------- MEDIAS ---------- */
-/* iphoneX == 980px */
-@media screen and (max-width: 980px) {
-  header>img{
-    height: 200px;
-  }
-  header>nav{
-    font-size: 150%;
-    flex: 1 0 100%;
-    margin: 0;
-    flex-wrap: wrap;
-  }
 
+
+/* iphoneX == 980px */
+
+@media screen and (max-width: 980px) {
+    header>img {
+        height: 200px;
+    }
+    header>nav {
+        font-size: 150%;
+        flex: 1 0 100%;
+        margin: 0;
+        flex-wrap: wrap;
+    }
 }
