@@ -1,35 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+@font-face {
+  font-family: "monbaiti";
+  src: url("../fonts/monbaiti.ttf");
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'B612', sans-serif;
+  font-family: 'monbaiti';
 }
 
 body {
-    background: rgb(33, 47, 60);
-    color: #E5E5E5;
+  background: rgb(33, 47, 60);
+  color: #E5E5E5;
+  font-size: 120%;
 }
 
 
 /* ---------- HEADER ---------- */
 
 header {
-    padding: 10px;
-    background: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  padding: 10px;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
 /* ---- logo ---- */
 
 header>img {
-    height: 100px;
-    margin: 0 20px;
+  height: 150px;
+  margin: 0 20px;
 }
 
 
@@ -41,41 +45,58 @@ header>nav {
 }
 
 header>nav>a {
-    text-decoration: none;
-    color: #E5E5E5;
+  text-decoration: none;
+  color: #B3B6B7;
 
-    margin: 10px 10px;
-    padding: 10px;
+  margin: 10px 10px;
+  padding: 10px;
 
-    border: 2px solid white;
-    border-radius: 7px;
+  border: 2px solid #B3B6B7;
+  border-radius: 7px;
 }
 
 header>nav>a:hover {
-    color: #F1C40F;
+  color: #F1C40F;
+  border-color: #F1C40F;
+  transition: .5s;
 }
 
-header>img:hover {
-    content: url('../img/Logos/logo1-hover2.png');
+/* ---- social media ---- */
+.social-media>a{
+	margin: 0 10px;
+  text-decoration: none;
 }
 
+.icon {
+   fill: #B3B6B7;
+   transition: 250ms;
+}
+
+a:hover .icon{
+  fill: #F1C40F;
+}
 
 
 /* ---------- MAIN ---------- */
+main{
+  background: linear-gradient(to top, rgb(33, 47, 60) 50%, black );
+  padding: 40px 0;
+}
 
 /* ---- top beers ---- */
 
 .top_beers{
   width: 80%;
-  max-width: 1300px;
+  max-width: 1100px;
 
-  margin: 20px auto;
+  margin: auto;
+  padding: 20px;
   overflow: hidden;
 
   text-align: center;
   background: rgb(27, 38, 49);
   border-radius: 20px;
-  box-shadow: 0px 0px 50px black ;
+  box-shadow: 0px 0px 30px black ;
 }
 
 .top_beers>h1{
@@ -99,13 +120,72 @@ header>img:hover {
   margin: 5px 0 20px;
 }
 
+  /* ----- info ----- */
+  .info{
+    margin: 40px auto 0;
+    width: 90%;
+    max-width: 1300px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info>div{
+    min-width: 400px;
+    margin: 20px;
+    width: 45%;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px black;
+  }
+
+  /* ---- map ---- */
+  .map{
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+
+  }
+  .map iframe{
+    margin: -5px;
+    width: 120%;
+  }
+
+  /* ---- contac-lines ---- */
+  .contact-lines{
+    background: rgb(27, 38, 49);
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-lines>div{
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+
+  }
+  .contact-lines p{
+    clear: both;
+    float: left;
+    margin: 20px 10px;
+  }
+  .contact-lines p b{
+    margin-right: 5px;
+    color: #F1C40F;
+    font-weight: normal;
+    font-size: 130%;
+    font-style: italic;
+  }
 
 /* ---------- FOOTER ---------- */
 
 footer{
-  margin: 50px 20px;
+  padding: 50px 20px;
   display: flex;
   justify-content: space-between;
+  background: rgb(33, 47, 60);
 }
 
 .tooltip .extra {
@@ -122,26 +202,12 @@ footer{
     border-radius: 2px;
 }
 
-/* ---- social media ---- */
-
-.social-media>a{
-	margin-left: 10px;
-	margin-right: 10px;
-  text-decoration: none;
-}
-
-.icon {
-   fill: black;
-   transition: 250ms;
-}
-
-a:hover .icon{
-  fill: #F1C40F;
-}
-
-
 /* ---------- MEDIAS ---------- */
-
+@media screen and (max-width: 1200px){
+  .info>div{
+    width: 70%;
+  }
+}
 @media screen and (max-width: 900px) {
     header>nav {
         flex: 1 0 100%;
