@@ -1,0 +1,72 @@
+.filters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.filters *{
+  transition: color .5s, background-color .5s;
+}
+
+.filters label{
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+  margin: 5px 30px;
+}
+
+.filters input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.check{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.filters label:hover input ~ .check{
+  background-color: grey;
+}
+.filters label:hover input ~ span {
+  color: lightgrey;
+}
+
+.filters input:checked ~ .check {
+  background-color: grey;
+}
+.filters input:checked ~ span {
+  color: lightgrey;
+}
+
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.filters input:checked ~ .check:after {
+  display: block;
+  background: #F1C40F;
+}
+
+/* Style the indicator (dot/circle) */
+.filters .check:after {
+ 	top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: white;
+}
+
+#countries-filter{
+  transition: .5s;
+}

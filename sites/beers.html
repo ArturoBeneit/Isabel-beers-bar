@@ -6,6 +6,10 @@
     <meta charset="utf-8">
     <title>Isabel's beers</title>
     <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/beers.css">
+    <script src="../js/jquery/jquery-3.6.0.min.js" charset="utf-8"></script>
+    <script src="../js/beers.js" charset="utf-8"></script>
+    <script src="../js/main-beers.js" charset="utf-8"></script>
 </head>
   <header>
     <div class="social-media">
@@ -40,9 +44,36 @@
   </header>
 
   <main>
+    <div class="filters">
+      <label>
+        <input id="all" name="filter" value='all' type="radio" checked>
+        <span class="check"></span>
+        <span>Todas</span>
+      </label>
+
+      <label>
+        <input id="countries" name="filter" value="countries" type="radio">
+        <span class="check"></span>
+        <span>Filtrar por paises</span>
+      </label>
+    </div>
+
+    <div class="filters" id="countries-filter">
+      <label>
+        <input id="España" name="country" type="radio">
+        <span class="check"></span>
+        <span>España</span>
+      </label>
+
+      <label>
+        <input id="Suiza" name="country" type="radio">
+        <span class="check"></span>
+        <span>Suiza</span>
+      </label>
+    </div>
 
   </main>
-  
+
   <footer>
     <div class=tooltip>
         <p><small>Turazo &copy Todos los derechos reservados 1960-2060</small></p>

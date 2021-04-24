@@ -58,7 +58,7 @@ header>nav>a {
 header>nav>a:hover {
   color: #F1C40F;
   border-color: #F1C40F;
-  transition: .5s;
+  transition: .7s;
 }
 
 /* ---- social media ---- */
@@ -69,7 +69,7 @@ header>nav>a:hover {
 
 .icon {
    fill: #B3B6B7;
-   transition: 250ms;
+   transition: 0.5s;
 }
 
 a:hover .icon{
