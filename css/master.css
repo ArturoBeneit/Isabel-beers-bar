@@ -31,7 +31,7 @@ header {
 
 /* ---- logo ---- */
 
-header>img {
+header>a>img {
   height: 150px;
   margin: 0 20px;
 }
