@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 .filters *{
   transition: color .5s, background-color .5s;
@@ -23,26 +22,24 @@
 
 .check{
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   height: 20px;
   width: 20px;
   background-color: #eee;
   border-radius: 50%;
+  transform: translateY(-50%);
 }
 
 .filters label:hover input ~ .check{
   background-color: grey;
-}
-.filters label:hover input ~ span {
-  color: lightgrey;
 }
 
 .filters input:checked ~ .check {
   background-color: grey;
 }
 .filters input:checked ~ span {
-  color: lightgrey;
+  color: #F1C40F;
 }
 
 .check:after {
@@ -69,6 +66,7 @@
 
 #countries-filter{
   transition: .5s;
+  margin: 20px 0;
 }
 
 
@@ -80,18 +78,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .country{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid blue;
+  margin: 30px;
+  padding: 10px;
+  background: rgb(27, 38, 49);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px black;
 }
 
 #all-beers h1{
-  border: 1px solid green;
   flex-basis: 100%;
   text-align: center;
+}
+
+.beer{
+  text-align: center;
+  margin: 20px;
 }

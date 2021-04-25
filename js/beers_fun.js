@@ -71,12 +71,15 @@ function beersFilteredByCountry(country) {
 
   let all_beers = document.createElement('div');
   all_beers.id = 'all-beers';
-  all_beers.innerHTML = `<h1> ${country} </h1>`;
+  country_div = document.createElement('div');
+  country_div.className = 'country';
+  country_div.innerHTML = `<h1> ${country} </h1>`;
 
   countryBeers.forEach((cerveza) => {
-    addBeer(all_beers,cerveza);
+    addBeer(country_div,cerveza);
   });
-
+  
+  all_beers.appendChild(country_div);
   return all_beers;
 }
 
