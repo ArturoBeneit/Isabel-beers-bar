@@ -70,3 +70,28 @@
 #countries-filter{
   transition: .5s;
 }
+
+
+#all-beers img{
+  width: 200px;
+}
+
+#all-beers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.country{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+}
+
+#all-beers h1{
+  border: 1px solid green;
+  flex-basis: 100%;
+  text-align: center;
+}
