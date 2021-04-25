@@ -9,6 +9,7 @@ function beers2Html_orderedByCountry() {
   all_beers.id = 'all-beers';
   let div_pais = document.createElement('div');
   div_pais.className = 'country';
+  img_pais = document.createElement('img');
 
   BEERS.forEach((cerveza,idx) => {
     let prev = BEERS[idx-1];
@@ -20,7 +21,10 @@ function beers2Html_orderedByCountry() {
         all_beers.appendChild(div_pais);
         div_pais = document.createElement('div');
         div_pais.className = 'country';
+        img_pais = document.createElement('img');
       }
+      img_pais.src = cerveza.flagSrc;
+      div_pais.appendChild(img_pais);
 
       let h1 = document.createElement('h1');
       h1.innerHTML = cerveza.pais;
@@ -53,13 +57,9 @@ function addBeer(div,cerveza) {
   let beer_div = document.createElement('div');
   beer_div.className = 'beer';
 
-  let html =
-  `
-  <img src='${cerveza.enlace}'>
-  <h3>${cerveza.nombre} ${cerveza.grados} grados</h3>
-  `
-  // let h3 = document.createElement('h3');
-  // h3.innerHTML = cerveza.nombre + ' ' + cerveza.grados + ' grados';
+  let html =`<img src='${cerveza.enlace}'>
+             <h3>${cerveza.nombre} ${cerveza.grados} grados</h3>`;
+
   beer_div.innerHTML += html;
 
   div.appendChild(beer_div);
@@ -68,17 +68,17 @@ function addBeer(div,cerveza) {
 
 function beersFilteredByCountry(country) {
   let countryBeers = BEERS.filter((b) => b.pais == country);
-
   let all_beers = document.createElement('div');
   all_beers.id = 'all-beers';
   country_div = document.createElement('div');
   country_div.className = 'country';
-  country_div.innerHTML = `<h1> ${country} </h1>`;
+  country_div.innerHTML = `<img src='${countryBeers[0].flagSrc}'>
+                           <h1> ${country} </h1>`;
 
   countryBeers.forEach((cerveza) => {
     addBeer(country_div,cerveza);
   });
-  
+
   all_beers.appendChild(country_div);
   return all_beers;
 }
