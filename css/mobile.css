@@ -1,0 +1,16 @@
+body{
+  font-size: 150%;
+}
+.filters{
+  font-size: 1.3em;
+}
+#countries-filter{
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   width : fit-content;
+   margin: 50px auto;
+   column-gap: 50px;
+}
+#countries-filter>label{
+  width: fit-content;
+}

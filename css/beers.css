@@ -66,9 +66,12 @@
 
 #countries-filter{
   transition: .5s;
-  margin: 20px 0;
+  margin: 20px 10px;
 }
-
+#countries-filter label{
+  width: 200px;
+  margin: 10px 10px;
+}
 
 .beer img{
   width: 200px;
