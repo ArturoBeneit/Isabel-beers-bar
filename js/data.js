@@ -36,9 +36,9 @@ const data = [
     'name': 'Reino Unido',
     'img': 'img/flags/uk.png',
     'beers': [
-      {'name':'Samuel smith Taddy Porter','img':'img/Cervezas/UK/SAMUEL-SMITH-TADY-PORTER.png'},
-      {'name':'Samuel smith Imperial Stout','img':'img/Cervezas/UK/SAMUEL-SMITH-IMPERIAL-STOUT.png'},
-      {'name':'St. Peter’s Best Bitter','img':'img/Cervezas/UK/st peter.png'},
+      {'name':'Samuel Smith Taddy Porter','img':'img/Cervezas/UK/SAMUEL-SMITH-TADY-PORTER.png'},
+      {'name':'Samuel Smith Imperial Stout','img':'img/Cervezas/UK/SAMUEL-SMITH-IMPERIAL-STOUT.png'},
+      {'name':'St.Peter’s Best Bitter','img':'img/Cervezas/UK/st peter.png'},
       {'name':'Hobgoblin','img':'img/Cervezas/UK/hobgoblin.png'},
       {'name':'The Trooper','img':'img/Cervezas/UK/trooper-beer.png'}
     ]
@@ -59,8 +59,8 @@ const data = [
     'name': 'España',
     'img': 'img/flags/es.png',
     'beers': [
-      {'name':'Octavo Arte Mañanas de Domingo','img':'img/Cervezas/Españita/MANANAS-DE-DOMINGO.png',},
-      {'name':'Octavo Arte Guerrera Segoviana','img':'img/Cervezas/Españita/GUERRERA-SEGOVIANA.png',},
+      {'name':'8A Mañanas de Domingo','img':'img/Cervezas/Españita/MANANAS-DE-DOMINGO.png',},
+      {'name':'8A Guerrera Segoviana','img':'img/Cervezas/Españita/GUERRERA-SEGOVIANA.png',},
       {'name':'Octavo Arte Putokawa','img':'img/Cervezas/Españita/PUTOKAWA.png',},
       {'name':'Mahou 5 Estrellas','img':'img/Cervezas/Españita/5estrellas.png',},
       {'name':'Mahou Clásica','img':'img/Cervezas/Españita/clasica.png',},
@@ -88,7 +88,7 @@ const data = [
     'img': 'img/flags/ie.png',
     'beers': [
       {'name':'Guinness Draught','img':'img/Cervezas/Irlanda/guinness.jpg',},
-      {'name':'Kilkenny’s Irish Cream Ale','img':'img/Cervezas/Irlanda/kilkenny.jpg',},
+      {'name':'Kilkenny Irish Cream','img':'img/Cervezas/Irlanda/kilkenny.jpg',},
       {'name':'Murphy’s Irish Red','img':'img/Cervezas/Irlanda/murphys.png',},
       {'name':'O’Hara’s Celtic Stout','img':'img/Cervezas/Irlanda/oharas-stout-irish.png',},
       {'name':'HOP-HOUSE-13','img':'img/Cervezas/Irlanda/HOP-House-13.png',},
