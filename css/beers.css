@@ -74,7 +74,7 @@
 }
 
 .beer img{
-  width: 200px;
+  width: 150px;
 }
 
 #all-beers{
@@ -105,11 +105,17 @@
 #all-beers h1{
   flex-basis: 100%;
   text-align: center;
+  font-size: 250%;
 }
 
 .beer{
   text-align: center;
-  margin: 20px;
+  margin: 40px;
+}
+
+.beer>h2{
+  padding: 30px;
+  /* font-size: 150%; */
 }
 
 footer a{

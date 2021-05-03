@@ -47,7 +47,7 @@ function getBeersHTML(country = 'all'){
     country_obj.beers.forEach((beer) => {
       html += `<div class='beer'>
                 <img src='../${beer.img}'>
-                <h4>${beer.name}</h4>
+                <h2>${beer.name}</h2>
                </div>`
     });
 
