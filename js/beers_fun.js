@@ -46,12 +46,10 @@ function getBeersHTML(country = 'all'){
 
     country_obj.beers.forEach((beer) => {
       html += `<div class='beer'>
-                <img src='../img/Cervezas/Alemanas/paulaner-hefe.png'>
+                <img src='../${beer.img}'>
                 <h4>${beer.name}</h4>
                </div>`
     });
-
-
 
     country_div.innerHTML = html;
 
