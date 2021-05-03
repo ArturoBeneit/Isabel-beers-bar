@@ -6,14 +6,25 @@
     background: rgb(27, 38, 49);
     border-radius: 20px;
     box-shadow: 0px 0px 30px black;
+    max-width: 1000px;
 }
 
 .articulo>fieldset {
+    border-width: 5px;
+    border-color: black;
+    border-style: dashed;
     border-radius: 20px;
     margin: 20px auto;
     padding: 10px;
+    max-width: fit-content;
+}
+
+.articulo>section {
+    text-align: center;
 }
 
 .imagen {
     padding: 40px;
+    width: 50%;
+    height: 50%;
 }
