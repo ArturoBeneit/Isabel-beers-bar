@@ -110,13 +110,8 @@ main {
     padding: 20px;
 }
 
-<<<<<<< HEAD
 .topBeer>img{
   width: 80%;
-=======
-.topBeer>img {
-    width: 100%;
->>>>>>> c3393dae6be1657d62471c4f7dd9d321219474b5
 }
 
 .topBeer>p:first-of-type {
