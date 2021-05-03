@@ -1,189 +1,198 @@
 @font-face {
-  font-family: "monbaiti";
-  src: url("../fonts/monbaiti.ttf");
+    font-family: "monbaiti";
+    src: url("../fonts/monbaiti.ttf");
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'monbaiti';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'monbaiti';
 }
 
 body {
-  background: rgb(33, 47, 60);
-  color: #E5E5E5;
-  font-size: 120%;
+    background: rgb(33, 47, 60);
+    color: #E5E5E5;
+    font-size: 120%;
 }
 
 
 /* ---------- HEADER ---------- */
 
 header {
-  padding: 10px;
-  background: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    padding: 10px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* ---- logo ---- */
 
 header>a>img {
-  height: 150px;
-  margin: 0 20px;
+    height: 150px;
+    margin: 0 20px;
 }
 
 
 /* ---- menu ---- */
 
 header>nav {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 header>nav>a {
-  text-decoration: none;
-  color: #B3B6B7;
-
-  margin: 10px 10px;
-  padding: 10px;
-
-  border: 2px solid #B3B6B7;
-  border-radius: 7px;
+    text-decoration: none;
+    color: #B3B6B7;
+    margin: 10px 10px;
+    padding: 10px;
+    border: 2px solid #B3B6B7;
+    border-radius: 7px;
 }
 
 header>nav>a:hover {
-  color: #F1C40F;
-  border-color: #F1C40F;
-  transition: .7s;
+    color: #F1C40F;
+    border-color: #F1C40F;
+    transition: .7s;
 }
 
+
 /* ---- social media ---- */
-.social-media>a{
-	margin: 0 10px;
-  text-decoration: none;
+
+.social-media>a {
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 .icon {
-   fill: #B3B6B7;
-   transition: 0.5s;
+    fill: #B3B6B7;
+    transition: 0.5s;
 }
 
-a:hover .icon{
-  fill: #F1C40F;
+a:hover .icon {
+    fill: #F1C40F;
 }
 
 
 /* ---------- MAIN ---------- */
-main{
-  background: linear-gradient(to top, rgb(33, 47, 60) 50%, black );
-  padding: 40px 0;
-  margin: -2px 0 0 0;
+
+main {
+    background: linear-gradient(to top, rgb(33, 47, 60) 50%, black);
+    padding: 40px 0;
+    margin: -2px 0 0 0;
 }
+
 
 /* ---- top beers ---- */
 
-.top_beers{
-  width: 90%;
-  max-width: 1300px;
-
-  margin: auto;
-  padding: 20px;
-  overflow: hidden;
-
-  text-align: center;
-  background: rgb(27, 38, 49);
-  border-radius: 20px;
-  box-shadow: 0px 0px 30px black ;
+.top_beers {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+    background: rgb(27, 38, 49);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px black;
 }
 
-.top_beers>h1{
-  font-size: 300%;
+.top_beers>h1 {
+    font-size: 300%;
 }
 
-.topBeer{
-  float: left;
-  width: calc(100%/4);
-  padding: 20px;
+.topBeer {
+    float: left;
+    width: calc(100%/4);
+    padding: 20px;
 }
 
-.topBeer>img{
-  width: 100%;
+.topBeer>img {
+    width: 100%;
 }
 
-.topBeer>p:first-of-type{
-  color: #F1C40F;
-  font-size: 150%;
-  margin: 5px 0 20px;
+.topBeer>p:first-of-type {
+    color: #F1C40F;
+    font-size: 150%;
+    margin: 5px 0 20px;
 }
 
-  /* ----- info ----- */
-  .info{
+
+/* ----- info ----- */
+
+.info {
     margin: 50px auto 0;
     width: 90%;
     max-width: 1300px;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .info>div{
+}
+
+.info>div {
     min-width: 400px;
     width: 45%;
     min-width: 400px;
     border-radius: 10px;
     box-shadow: 0px 0px 30px black;
     margin: 50px 0;
-  }
+}
 
-  /* ---- map ---- */
-  .map{
+
+/* ---- map ---- */
+
+.map {
     width: 90%;
     border-radius: 10px;
     overflow: hidden;
-  }
-  .map iframe{
+}
+
+.map iframe {
     margin: -5px;
     width: 120%;
-  }
+}
 
-  /* ---- contac-lines ---- */
-  .contact-lines{
+
+/* ---- contac-lines ---- */
+
+.contact-lines {
     background: rgb(27, 38, 49);
     padding: 10px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .contact-lines>div{
+}
+
+.contact-lines>div {
     overflow: hidden;
     width: fit-content;
     margin: auto;
+}
 
-  }
-  .contact-lines p{
+.contact-lines p {
     clear: both;
     float: left;
     margin: 20px 10px;
-  }
-  .contact-lines p b{
+}
+
+.contact-lines p b {
     margin-right: 5px;
     color: #F1C40F;
     font-weight: normal;
     font-size: 130%;
     font-style: italic;
-  }
+}
+
 
 /* ---------- FOOTER ---------- */
 
-footer{
-  padding: 50px 20px;
-  display: flex;
-  justify-content: space-between;
+footer {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tooltip .extra {
@@ -200,24 +209,26 @@ footer{
     border-radius: 2px;
 }
 
-/* ---------- MEDIAS ---------- */
-@media screen and (max-width: 1200px){
-  .info{
-    justify-content: center;
-    margin: 50px auto;
-  }
-  .info>div{
-    width: 70%;
 
-  }
+/* ---------- MEDIAS ---------- */
+
+@media screen and (max-width: 1200px) {
+    .info {
+        justify-content: center;
+        margin: 50px auto;
+    }
+    .info>div {
+        width: 70%;
+    }
 }
+
 @media screen and (max-width: 900px) {
     header>nav {
         flex: 1 0 100%;
         flex-wrap: wrap;
     }
-    .topBeer{
-      width: calc(100%/2);
+    .topBeer {
+        width: calc(100%/2);
     }
 }
 
@@ -229,14 +240,11 @@ footer{
         align-items: center;
         text-align: center;
     }
-
-    .topBeer{
-      width: 100%;
+    .topBeer {
+        width: 100%;
     }
-
-    .topBeer>img{
-      width: auto;
-      height: 300px;
+    .topBeer>img {
+        width: auto;
+        height: 300px;
     }
-
 }

@@ -1,0 +1,19 @@
+.articulo {
+    width: 90%;
+    margin: 50px auto;
+    padding: 50px;
+    text-align: center;
+    background: rgb(27, 38, 49);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px black;
+}
+
+.articulo>fieldset {
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.imagen {
+    padding: 40px;
+}
