@@ -1,6 +1,6 @@
 .articulo {
     width: 90%;
-    margin: 50px auto;
+    margin: 0 auto 50px;
     padding: 50px;
     text-align: center;
     background: rgb(27, 38, 49);
@@ -24,7 +24,22 @@
 }
 
 .imagen {
-    padding: 40px;
-    width: 50%;
-    height: 50%;
+    margin: 30px auto 10px;
+    width: 100px;
+}
+
+h1{
+  margin: 20px auto;
+}
+h2{
+  font-weight: normal;
+  margin: 10px auto;
+}
+.title{
+  font-size: 170%;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.seg{
+  margin-top: -30px;
 }
