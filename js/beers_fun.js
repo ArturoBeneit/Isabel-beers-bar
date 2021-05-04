@@ -1,5 +1,9 @@
 function addCountries() {
-  let countries = data.map(c => c.name);
+  let countries = data.sort((c1,c2) =>{
+    if(c1.name<c2.name) return -1;
+    if(c1.name>c2.name) return  1;
+    return 0;
+  }).map(c => c.name);
 
   let html = '';
   for (let name of countries){
