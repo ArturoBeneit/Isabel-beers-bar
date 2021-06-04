@@ -29,7 +29,7 @@ const data = [
       {'name':'Mongozo Mango','img':'img/Cervezas/Bélgica/mongozo-mango.png'},
       {'name':'Cubanisto','img':'img/Cervezas/Bélgica/cubanisto.png'},
       {'name':'Satan Red','img':'img/Cervezas/Bélgica/satan-red.png'},
-      {'name':'Kwaak','img':'img/Cervezas/Bélgica/kwaak.png'},
+      {'name':'Kwak','img':'img/Cervezas/Bélgica/kwaak.png'},
     ]
   },
   {
